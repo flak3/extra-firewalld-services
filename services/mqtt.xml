@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>MQTT</short>
+  <description>Message Queuing Telemetry Transport (MQTT) is a publish-subscribe-based messaging protocol commonly used for home automation.</description>
+  <port port="1883" protocol="tcp"/>
+</service>

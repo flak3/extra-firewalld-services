@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>MQTT over TLS</short>
+  <description>Message Queuing Telemetry Transport (MQTT) is a publish-subscribe-based messaging protocol commonly used for home automation. Use this if you use MQTT with TLS encryption enabled.</description>
+  <port port="8883" protocol="tcp"/>
+</service>

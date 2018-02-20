@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>distcc</short>
+  <description>distcc is a tool for speeding up compilation of source code by using distributed computing over a computer network.</description>
+  <port port="3632" protocol="tcp"/>
+  <port port="3632" protocol="udp"/>
+</service>

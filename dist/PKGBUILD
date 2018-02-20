@@ -1,0 +1,19 @@
+# Maintainer: Niklas <dev@n1klas.net>
+
+pkgname=extra-firewalld-services
+pkgver=1
+pkgrel=1
+pkgdesc="A collection of additional service files not included with Firewalld"
+arch=(any)
+url="https://github.com/flak3/extra-firewalld-services"
+license=('custom:CC0')
+depends=('firewalld')
+source=("https://github.com/flak3/extra-firewalld-services/archive/${pkgver}.tar.gz")
+sha512sums=('FILL')
+
+package() {
+	cd "${srcdir}/${pkgname}-${pkgver}"
+
+	install -Dm755 services/* "${pkgdir}/usr/lib/firewalld/services"
+    install -Dm755 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.txt"
+}

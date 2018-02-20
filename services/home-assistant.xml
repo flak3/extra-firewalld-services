@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service>
+  <short>Home Assistant</short>
+  <description>Home Assistant is an open-source home automation platform. Only use this if you are not using an reverse proxy like nginx to access the web interface.</description>
+  <port port="8123" protocol="tcp"/>
+</service>
