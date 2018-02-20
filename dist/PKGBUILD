@@ -12,8 +12,8 @@ source=("https://github.com/flak3/extra-firewalld-services/archive/${pkgver}.tar
 sha512sums=('FILL')
 
 package() {
-	cd "${srcdir}/${pkgname}-${pkgver}"
+    cd "${srcdir}/${pkgname}-${pkgver}"
 
-	install -Dm755 services/* "${pkgdir}/usr/lib/firewalld/services"
+    install -Dm755 services/* "${pkgdir}/usr/lib/firewalld/services"
     install -Dm755 LICENSE.txt "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE.txt"
 }
